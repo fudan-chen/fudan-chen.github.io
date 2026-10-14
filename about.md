@@ -3,10 +3,12 @@ layout: page
 title: 关于
 permalink: /about/
 eyebrow: ABOUT
-description: 关于 Sitao Chen 和这个博客。
+description: Sitao Chen（陈思涛），Fudan University，研究方向为 Multimodal，目前是 RSI Intern。
 ---
 
-你好，我是 **Sitao Chen**。
+你好，我是 **Sitao Chen（陈思涛）**，来自 **Fudan University**，目前是 **RSI Intern**。
+
+我的研究方向是 **多模态（Multimodal）**。
 
 这个博客用来记录我的学习笔记、技术实践与思考。
 
