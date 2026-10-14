@@ -1,0 +1,35 @@
+title: Sitao Chen
+author: Sitao Chen
+description: "学习笔记、技术实践与思考。"
+url: https://fudan-chen.github.io
+baseurl: /sitaochen1212.github.io
+repository: fudan-chen/sitaochen1212.github.io
+github_url: https://github.com/fudan-chen
+avatar: ""
+lang: zh-CN
+timezone: Asia/Shanghai
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:title/
+future: false
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+  - LICENSE

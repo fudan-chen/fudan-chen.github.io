@@ -1,0 +1,22 @@
+---
+layout: default
+title: 文章
+permalink: /blog/
+description: 学习笔记、技术实践与思考。
+---
+<div class="page-heading"><p class="eyebrow">BLOG</p><h1>文章</h1><p>把问题写下来，也把理解写清楚。</p></div>
+{% if site.posts.size > 0 %}
+<div class="search-control" hidden><label for="post-search">搜索文章</label><input type="search" id="post-search" placeholder="标题、摘要或标签…" autocomplete="off"><p id="search-status" class="search-status" role="status" aria-live="polite"></p></div>
+<div class="post-list">
+{% for post in site.posts %}
+<article class="post-card" data-search="{{ post.title | append: ' ' | append: post.description | append: ' ' | append: post.tags | join: ' ' | escape }}">
+  <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y 年 %m 月 %d 日' }}</time>{% for tag in post.tags %}<span class="tag">{{ tag | escape }}</span>{% endfor %}</p>
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+  <p>{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
+</article>
+{% endfor %}
+</div>
+<p class="no-results" hidden>没有找到匹配的文章，试试其他关键词。</p>
+{% else %}
+<div class="empty-state"><p>文章会陆续更新。</p><span>你可以先<a href="{{ '/about/' | relative_url }}">了解这个博客</a>，或订阅 <a href="{{ '/feed.xml' | relative_url }}">RSS</a>。</span></div>
+{% endif %}
