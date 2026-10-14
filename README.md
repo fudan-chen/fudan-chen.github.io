@@ -2,7 +2,7 @@
 
 Jekyll 个人博客。首页布局参考 Jiaxuan Zou 的学术主页；页面、样式和交互独立实现，未复制其个人资料或文章。
 
-网站：https://fudan-chen.github.io/sitaochen1212.github.io/
+网站：https://fudan-chen.github.io/
 
 ## 发布文章
 
@@ -51,12 +51,12 @@ bundle install
 bundle exec jekyll serve
 ```
 
-打开终端显示的本地地址（包含 `/sitaochen1212.github.io/` 路径）。如需预览草稿，加 `--drafts`。
+打开终端显示的本地地址。如需预览草稿，加 `--drafts`。
 
 ## GitHub Pages 设置
 
 Settings → Pages → Deploy from a branch → `main` → `/ (root)`。
 
-当前账号是 `fudan-chen`，因此这个仓库发布为项目网站。若以后迁移到个人根站点，调整 `_config.yml` 中的 `url` 和 `baseurl`，并更新本文的网站地址。
+账号名为 `fudan-chen`，仓库名为 `fudan-chen.github.io`，因此网站发布在个人根域名。`_config.yml` 中的 `baseurl` 保持为空。
 
 参考：[Jiaxuan Zou 的网站源码](https://github.com/JiaxuanZou0714/jiaxuanzou0714.github.io)。
